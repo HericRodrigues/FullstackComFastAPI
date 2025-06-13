@@ -16,7 +16,7 @@ app.add_middleware(
 
 Base.metadata.create_all(bind=engine)
 
-app.include_router(prodduct.router)
+app.include_router(product.router)
 @app.get("/")
 def read_root():
     return {"message": "API funcionando"}
